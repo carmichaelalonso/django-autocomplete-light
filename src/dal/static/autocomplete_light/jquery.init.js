@@ -1,9 +1,6 @@
+
+var django = django || {};
+django.jQuery = jQuery
+
 var yl = yl || {};
-
-if (yl.jQuery === undefined) {
-    if (typeof django !== 'undefined')
-        yl.jQuery = django.jQuery;
-
-    else if (typeof $ !== 'undefined')
-        yl.jQuery = $;
-}
+yl.jQuery = django.jQuery
